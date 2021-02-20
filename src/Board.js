@@ -1,10 +1,9 @@
-// Render board, check that it has 9 squares with different data ids
 import React from 'react'
 import Square from './Square'
 
 class Board extends React.Component {  
   renderSquare(i) {
-    return <Square data-testid={i} value={this.props.squares[i]} onClick={() => this.props.onClick(i)} />
+    return <Square data-testid={`square-${i}`} value={this.props.squares[i]} onClick={() => this.props.onClick(i)} />
   }
 
   render() {
