@@ -1,6 +1,3 @@
-// Board is rendered correctly (check status and moves)
-// After a move character X is rendered, history and status are updated
-// A second move renders the O character, history and status are updated
 // Nothing happens if a click happens on a square that already has a filled value
 // After a winning move winner is declared and board cannot be interacted with
 // JumpTo works correctly
@@ -65,7 +62,7 @@ class Game extends React.Component {
     })
 
     if (winner) {
-      status = `The winner is: ${winner} `
+      status = `The winner is: ${winner}`
     } else {
       status = `Next player: ${this.state.xIsNext ? 'X' : 'O'}`
     }
