@@ -1,7 +1,3 @@
-// Nothing happens if a click happens on a square that already has a filled value
-// After a winning move winner is declared and board cannot be interacted with
-// JumpTo works correctly
-
 import React from 'react'
 import Board from './Board'
 
